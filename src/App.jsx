@@ -27,12 +27,12 @@ function App() {
   }, []);
 
   const moveYesButton = () => {
-    const x = Math.random() * 200 - 100; // Increased range: -100 to 100
-    const y = Math.random() * 200 - 100; // Increased range: -100 to 100
+    const x = Math.random() * 400 - 200;
+    const y = Math.random() * 400 - 200;
 
     setYesBtnPosition({
       transform: `translate(${x}px, ${y}px)`,
-      transition: 'all 0.2s ease'
+      transition: 'all 0.05s ease'
     });
   };
 
@@ -173,7 +173,9 @@ function App() {
               className="btn yes-btn"
               style={yesBtnPosition}
               onMouseEnter={handleYesHover}
-              onClick={handleYesHover}
+              onTouchStart={(e) => { e.preventDefault(); handleYesHover(); }}
+              onClick={(e) => { e.preventDefault(); handleYesHover(); }}
+              onPointerDown={(e) => { e.preventDefault(); handleYesHover(); }}
             >
               YES
             </button>
