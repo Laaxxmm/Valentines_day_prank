@@ -2,7 +2,7 @@ import { useState, useEffect, useRef } from 'react'
 import confetti from 'canvas-confetti'
 import videoFile from './assets/vid.mp4'
 import bgMusic from './assets/bgmusic.mp3'
-import heartImg from './assets/valentine-heart.png'
+import familyPhoto from './assets/family-photo.jpg'
 import './App.css'
 
 function App() {
@@ -124,7 +124,7 @@ function App() {
       {showValentine ? (
         <div className="card valentine-final">
           <div className="heart-glow-wrapper">
-            <img src={heartImg} alt="Heart" className="valentine-heart-img" />
+            <img src={familyPhoto} alt="Family" className="valentine-photo" />
           </div>
           <h1 className="valentine-title">Happy Valentine&#39;s Day</h1>
           <h2 className="valentine-name">Manimhegalai</h2>

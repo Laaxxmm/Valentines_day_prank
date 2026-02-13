@@ -127,15 +127,16 @@
 .heart-glow-wrapper {
   position: relative;
   display: inline-block;
-  animation: heartPulse 1.5s ease-in-out infinite;
 }
 
-.valentine-heart-img {
-  width: 180px;
-  height: 180px;
-  object-fit: contain;
-  filter: drop-shadow(0 0 30px rgba(255, 20, 147, 0.6));
-  animation: heartFloat 3s ease-in-out infinite;
+.valentine-photo {
+  width: 280px;
+  max-width: 90%;
+  border-radius: 16px;
+  object-fit: cover;
+  box-shadow: 0 8px 30px rgba(232, 67, 147, 0.3), 0 0 40px rgba(255, 105, 180, 0.15);
+  border: 3px solid rgba(255, 105, 180, 0.4);
+  animation: fadeInUp 1s ease forwards;
 }
 
 .valentine-title {
